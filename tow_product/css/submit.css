@@ -1,0 +1,129 @@
+@charset "UTF-8";
+body,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+img,
+legend,
+li,
+menu,
+nav,
+ol,
+p,
+ul {
+  margin: 0;
+  padding: 0; }
+
+fieldset,
+img {
+  border: 0; }
+
+img {
+  display: block; }
+
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal; }
+
+ol,
+ul {
+  list-style: none; }
+
+body {
+  color: #333;
+  padding: 0;
+  font: 12px/20px "SimSun","瀹嬩綋","Arial Narrow",HELVETICA;
+  background: #f1f1f1;
+  /* overflow-y:scroll;*/
+  overflow-x: hidden; }
+
+a {
+  color: #333;
+  text-decoration: none; }
+
+/*----------wrap-----------*/
+#wrap {
+  background-color: #fff;
+  padding-top: 61px;
+  width: 854px;
+  margin: 0 auto 20px;
+  position: relative;
+  min-height: 559px; }
+  #wrap #logo {
+    height: 39px;
+    width: 654px; }
+    #wrap #logo a {
+      position: relative;
+      left: 47%; }
+  #wrap #main {
+    width: 358px;
+    height: 288px;
+    margin: 22px auto 0;
+    padding-bottom: 20px; }
+    #wrap #main .dlbox h3 {
+      text-indent: 11px;
+      margin-bottom: 15px;
+      color: #666; }
+    #wrap #main .dlbox input {
+      margin: 0 auto;
+      width: 326px;
+      height: 42px;
+      line-height: 22px;
+      display: block;
+      text-indent: 14px; }
+    #wrap #main .dlbox #btn {
+      text-align: center;
+      background: #d71921;
+      border: 0;
+      color: #fff; }
+    #wrap #main #link {
+      margin: 34px auto 0;
+      border-top: 1px solid #b0b0b0;
+      width: 326px; }
+      #wrap #main #link legend {
+        font-size: 14px;
+        color: #b0b0b0;
+        margin: 0 auto;
+        text-align: center; }
+    #wrap #main .p {
+      padding-top: 10px;
+      text-align: center;
+      width: 358px;
+      height: 33px; }
+  #wrap #links {
+    padding-top: 30px;
+    text-align: center;
+    color: #e0e0e0; }
+    #wrap #links a {
+      color: #757575;
+      padding: 0 9px;
+      font-size: 14px; }
+
+.wrap-req {
+  height: 620px; }
+
+footer {
+  text-align: center; }
+  footer a {
+    float: left;
+    position: relative;
+    margin-right: 5px;
+    left: 35%; }
+
+/*# sourceMappingURL=submit.css.map */
