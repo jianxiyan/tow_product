@@ -1,0 +1,322 @@
+@charset "UTF-8";
+body,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+img,
+legend,
+li,
+menu,
+nav,
+ol,
+p,
+ul {
+  margin: 0;
+  padding: 0; }
+
+fieldset,
+img {
+  border: 0; }
+
+img {
+  display: block; }
+
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal; }
+
+ol,
+ul {
+  list-style: none; }
+
+body {
+  color: #333;
+  padding: 0;
+  font: 12px/20px "SimSun","瀹嬩綋","Arial Narrow",HELVETICA;
+  background: #fff;
+  /* overflow-y:scroll;*/
+  overflow-x: hidden; }
+
+a {
+  color: #666;
+  text-decoration: none; }
+
+/*----------header-------------*/
+div {
+  margin: 0;
+  padding: 0; }
+  div .g-toolbar {
+    position: relative;
+    width: 100%;
+    height: 27px;
+    line-height: 27px;
+    color: #666;
+    background: #FAFAFA;
+    border-bottom: 1px solid #EEE;
+    z-index: 7650; }
+    div .g-toolbar .wrapper {
+      width: 1191px;
+      min-width: 1011px;
+      margin: 0 auto;
+      clear: both; }
+      div .g-toolbar .wrapper .quick-link {
+        position: relative;
+        float: right; }
+        div .g-toolbar .wrapper .quick-link .fore1 {
+          width: 70px;
+          overflow: visible;
+          float: left;
+          display: inline; }
+          div .g-toolbar .wrapper .quick-link .fore1 b {
+            display: block;
+            float: left;
+            margin: 7px 4px 0 0;
+            width: 13px;
+            height: 13px;
+            background: url(../img/20130725.png) no-repeat 0 0;
+            cursor: pointer; }
+          div .g-toolbar .wrapper .quick-link .fore1 a {
+            color: #666; }
+        div .g-toolbar .wrapper .quick-link .child-node {
+          position: relative;
+          float: left;
+          padding-left: 10px;
+          margin-left: 10px;
+          line-height: 27px;
+          background: url(../img/public.sprite.png) -102px 7px no-repeat;
+          z-index: 1; }
+        div .g-toolbar .wrapper .quick-link .fore2 {
+          width: 80px;
+          overflow: visible;
+          margin-left: 10px;
+          background: url(../img/public.sprite.png) -102px 7px no-repeat;
+          z-index: 1;
+          float: left;
+          display: inline; }
+          div .g-toolbar .wrapper .quick-link .fore2 b {
+            display: block;
+            float: left;
+            margin: 6px 4px 0 10px;
+            width: 12px;
+            height: 15px;
+            background: url(../img/phone.gif) no-repeat 0 0;
+            cursor: pointer; }
+          div .g-toolbar .wrapper .quick-link .fore2 .sn-qrcode {
+            position: absolute;
+            width: 168px;
+            height: 198px;
+            background: #fff;
+            right: -27px;
+            top: 28px;
+            border: 1px solid #fafafa;
+            box-shadow: 0 0 5px #aaa; }
+            div .g-toolbar .wrapper .quick-link .fore2 .sn-qrcode .sn-qrcode-content {
+              width: 135px;
+              height: 135px;
+              margin: 16px auto;
+              background: url(../img/erweima-iconfont.gif) 0 0 no-repeat; }
+            div .g-toolbar .wrapper .quick-link .fore2 .sn-qrcode p {
+              background: url(http://img.anta.cn/sources/NewEdition/2015newimages/erweima-iconfont.gif) -139px 0 no-repeat;
+              text-indent: -9999px;
+              overflow: hidden;
+              margin: 0 10px; }
+            div .g-toolbar .wrapper .quick-link .fore2 .sn-qrcode i {
+              width: 0;
+              height: 0;
+              line-height: 0;
+              font-size: 0;
+              position: absolute;
+              left: 50%;
+              top: -10px;
+              margin-left: -2px;
+              border-width: 5px;
+              border-style: dashed dashed solid;
+              border-color: transparent transparent #fff; }
+      div .g-toolbar .wrapper .tool-link {
+        position: relative;
+        float: left;
+        right: -2px; }
+        div .g-toolbar .wrapper .tool-link .welcome {
+          padding-left: 12px;
+          margin-right: 12px;
+          background: none; }
+        div .g-toolbar .wrapper .tool-link .logReg {
+          line-height: 27px;
+          color: #666; }
+          div .g-toolbar .wrapper .tool-link .logReg .child-node {
+            margin-right: 12px;
+            background: none; }
+            div .g-toolbar .wrapper .tool-link .logReg .child-node .g-important {
+              color: #d00; }
+
+/*-----------nav------------------*/
+#header-simple {
+  margin: 0 0 20px 0;
+  border-bottom: 2px solid #F3EBEB; }
+  #header-simple .clearfix {
+    width: 1190px;
+    margin: 0 auto;
+    padding: 20px 0 10px;
+    height: 72px; }
+    #header-simple .clearfix #logo {
+      padding-left: 5px;
+      float: left;
+      height: 62px;
+      width: 260px; }
+    #header-simple .clearfix .cartnew-title {
+      float: right;
+      padding-top: 20px; }
+      #header-simple .clearfix .cartnew-title ul {
+        width: 446px;
+        height: 30px;
+        background: url(../img/cartnew_flow.png) no-repeat top right;
+        float: right; }
+        #header-simple .clearfix .cartnew-title ul li {
+          width: 176px;
+          height: 30px;
+          text-align: center;
+          color: #999;
+          float: left; }
+          #header-simple .clearfix .cartnew-title ul li span {
+            display: block;
+            height: 15px;
+            padding: 15px 0px 0px 0px;
+            line-height: 15px; }
+          #header-simple .clearfix .cartnew-title ul li .cat {
+            background: url(../img/cart_flow_black.gif) no-repeat top center;
+            color: #000; }
+        #header-simple .clearfix .cartnew-title ul .end {
+          width: 94px;
+          text-align: right; }
+
+/*-----------content---------------*/
+#JcartBox {
+  margin: 0;
+  padding: 0; }
+  #JcartBox .w_cart {
+    width: 1050px;
+    margin: 0 auto; }
+    #JcartBox .w_cart .cart-hd {
+      height: 32px; }
+      #JcartBox .w_cart .cart-hd h2 {
+        font-size: 20px;
+        font-weight: bold;
+        float: left;
+        width: 115px; }
+    #JcartBox .w_cart .cart-inner {
+      min-height: 98px;
+      border: 1px solid #ddd; }
+      #JcartBox .w_cart .cart-inner .message {
+        height: 98px;
+        padding-left: 341px;
+        background: #f3f3f3 url(../img/cart-empty-bg.png) no-repeat 250px 22px; }
+        #JcartBox .w_cart .cart-inner .message p {
+          line-height: 98px; }
+          #JcartBox .w_cart .cart-inner .message p a {
+            color: #005ea7; }
+      #JcartBox .w_cart .cart-inner .w_cart_table {
+        border-spacing: 2px;
+        border-color: grey;
+        width: 100%;
+        border-collapse: collapse; }
+        #JcartBox .w_cart .cart-inner .w_cart_table thead {
+          height: 47px; }
+          #JcartBox .w_cart .cart-inner .w_cart_table thead tr {
+            background-color: #F5F5F5;
+            height: 30px; }
+            #JcartBox .w_cart .cart-inner .w_cart_table thead tr td {
+              padding: 15px 0;
+              text-align: center; }
+        #JcartBox .w_cart .cart-inner .w_cart_table tbody {
+          display: table-row-group;
+          vertical-align: middle;
+          border-color: inherit; }
+          #JcartBox .w_cart .cart-inner .w_cart_table tbody .item td {
+            padding: 15px 0;
+            text-align: center; }
+            #JcartBox .w_cart .cart-inner .w_cart_table tbody .item td .checkbox {
+              margin: 3px 3px 3px 4px; }
+            #JcartBox .w_cart .cart-inner .w_cart_table tbody .item td span {
+              display: block; }
+            #JcartBox .w_cart .cart-inner .w_cart_table tbody .item td .u_price {
+              color: #818181;
+              margin-bottom: 3px; }
+            #JcartBox .w_cart .cart-inner .w_cart_table tbody .item td .quantity-form {
+              width: 140px;
+              height: 30px;
+              margin: 0 auto;
+              border: 1px solid #ddd;
+              position: relative; }
+              #JcartBox .w_cart .cart-inner .w_cart_table tbody .item td .quantity-form a {
+                display: block;
+                float: left;
+                width: 30px;
+                height: 30px;
+                line-height: 27px;
+                text-align: center;
+                font-size: 18px;
+                background-color: #f5f5f5; }
+              #JcartBox .w_cart .cart-inner .w_cart_table tbody .item td .quantity-form .quantity-text {
+                border: 0;
+                width: 78px;
+                height: 27px;
+                text-align: center;
+                float: left;
+                border: 1px solid #ccc; }
+        #JcartBox .w_cart .cart-inner .w_cart_table tfoot .cart_toolbar {
+          border-spacing: 2px;
+          border-color: grey; }
+          #JcartBox .w_cart .cart-inner .w_cart_table tfoot .cart_toolbar td {
+            padding: 15px 0;
+            text-align: center; }
+            #JcartBox .w_cart .cart-inner .w_cart_table tfoot .cart_toolbar td a {
+              color: #005ea7;
+              margin: 0 10px;
+              display: block;
+              float: left; }
+            #JcartBox .w_cart .cart-inner .w_cart_table tfoot .cart_toolbar td p {
+              float: right;
+              margin-bottom: 10px;
+              font-size: 16px; }
+              #JcartBox .w_cart .cart-inner .w_cart_table tfoot .cart_toolbar td p .total_price {
+                font-size: 22px;
+                color: #d00; }
+        #JcartBox .w_cart .cart-inner .w_cart_table tfoot .cart_total {
+          background-color: #F5F5F5;
+          text-align: right; }
+          #JcartBox .w_cart .cart-inner .w_cart_table tfoot .cart_total td {
+            padding: 15px 0; }
+            #JcartBox .w_cart .cart-inner .w_cart_table tfoot .cart_total td a {
+              display: inline-block;
+              width: 130px;
+              height: 35px;
+              margin-right: 10px;
+              line-height: 35px;
+              text-align: center;
+              border-radius: 2px; }
+            #JcartBox .w_cart .cart-inner .w_cart_table tfoot .cart_total td .continue {
+              background-color: #fff;
+              border: 1px solid #ccc; }
+            #JcartBox .w_cart .cart-inner .w_cart_table tfoot .cart_total td .account {
+              background-color: #d00;
+              border: 1px solid #d00;
+              color: #fff;
+              cursor: pointer; }
+
+/*# sourceMappingURL=cart.css.map */

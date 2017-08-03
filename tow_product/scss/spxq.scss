@@ -1,0 +1,406 @@
+body,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+img,
+legend,
+li,
+menu,
+nav,
+ol,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset,
+img {
+  border: 0;  
+}
+img {
+    display: block;
+    
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+ol,
+ul {
+    list-style: none;
+}
+body {
+    color: #333;
+    padding: 0;
+    font: 12px/20px "SimSun","宋体","Arial Narrow",HELVETICA;
+    background: #fff; /* overflow-y:scroll;*/
+    overflow-x: hidden;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+/*-----------main1-------------*/
+.main1{
+    position: relative;
+    width: 1190px;
+    height: auto;
+    margin: 0 auto;
+    .list{
+        width: 100%;
+        height: 23px;
+        overflow: hidden;
+        margin: 25px 0 15px;
+        .list-con{
+            .list_fly{
+                float: left;
+                line-height: 21px;
+                a{
+                    color: #666;
+                }
+                i{
+                    display: inline-block;
+                    margin-left: 3px;
+                    width: 15px;
+                    height: 15px;
+                    vertical-align: middle;
+                    background: url(../img/list_select_icon.png) no-repeat;
+                    background-position: 0 -104px;
+                }
+            }
+        }
+    }
+    .bigshow{
+            width: 800px;
+            height: 800px;
+            position: absolute;
+            left:720px;
+            border: 3px solid #e5e5e5;
+            overflow: hidden;
+            z-index: 999;
+            background-color: #fff;
+            z-index: 9999;           
+            display: none;
+            img{
+                position: absolute;
+                z-index: 99999;
+                width: 800px;
+                height: 800px;
+            }
+    }
+    .produ-con{
+        width: 100%;
+        border-right: 1px solid #ddd;
+        height: 670px;
+        .preview{
+            width: 740px;
+            height: 655px;
+            float: left;
+            position: relative;
+            .smallImg{
+                position: relative;
+                height: 600px;
+                width: 100px;
+                overflow: hidden;
+                float: left;
+                .preview-bet{
+                    width: 27px;
+                    height: 27px;
+                    overflow: hidden;
+                    position: relative;
+                    cursor: pointer;
+                    margin: 0 auto;
+                        background: url(../img/dtl-icon.png) no-repeat 0 0;
+                }
+                .imgmenu{
+                    height: 524px;
+                    width: 100px;
+                    overflow: hidden;
+                    margin: 15px auto;
+                    position: relative;
+                }
+                .preview-next{
+                    width: 27px;
+                    height: 27px;
+                    overflow: hidden;
+                    position: relative;
+                    cursor: pointer;
+                    margin: 0 auto;
+                    background: url(../img/dtl-icon.png) no-repeat 0 -30px;
+                }
+                
+            }
+            .bigImg{
+                .fdj{
+                    display: none;
+                    width: 200px;
+                    height: 200px;
+                    position: absolute;
+                    background: rgba(0,0,0,.2);
+                }
+                position: relative;
+                float: left;
+                width: 594px;
+                height: 594px;
+                overflow: hidden;
+                border: 3px solid #eee;
+                margin: 0 20px;
+                img{
+                    width: 600px;
+                    height: 600px;
+                }
+            }
+        }
+        
+       .right-con{
+            float: left;
+            width: 450px;
+            .title{
+                width: 100%;
+                overflow: hidden;
+                margin-bottom: 10px;
+                h1{
+                        color: #000;
+                    font-size: 24px;
+                    font-weight: 700;
+                    padding-bottom: 0.2em;
+                    height: 28px;
+                    .f1{
+                        float: left;
+                    }
+                    .exp-style{
+                            display: inline-block;
+                        float: right;
+                        color: #666464;
+                        font-size: 14px;
+                        font-weight: normal;
+                        margin-top: 6px;
+                        line-height: 18px;
+                    }
+                }
+                .start{
+                    display: block;
+                    width: 100%;
+                    height: 16px;
+                    line-height: 20px;
+                    margin: 5px auto;
+                    .start-num{
+                        background: url(../img/stars.png) no-repeat scroll 0 -14px;
+                        display: inline-block;
+                        height: 14px;
+                        vertical-align: middle;
+                        width: 60px;
+                        .num-con{
+                            background: url(../img/stars.png) no-repeat scroll 0 1px;
+                            display: inline-block;
+                            height: 16px;
+                            width: 98%;
+                        }
+                    }
+                    .count{
+                            color: #fa5400;
+                        display: inline-block;
+                        font-size: 12px;
+                        line-height: 14px;
+                    }
+                }
+            }
+            .price-list{
+                width: 100%;
+                .price{
+                        color: #D71921;
+                    overflow: hidden;
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                     border-top: 1px solid #d9d9d9;
+                    padding-top: 10px;
+                }
+                b{
+                        font-size: 28px;
+                }
+                .price-item{
+                        color: #999;
+                    overflow: hidden;
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                }
+            }
+            .pro-alert{
+                min-height: 36px;
+                background-color: #eee;
+                color: #999;
+                overflow: hidden;
+                padding: 20px 20px;
+                a{
+                    display: block;
+                    p{
+                        width: 450px;
+                        float: left;
+                        color: #c40000;
+                        line-height: 23px;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .selectbox{
+                    width: 446px;
+                z-index: -1;
+                .colorbox{
+                    overflow: hidden;
+                    padding-top: 1px;
+                    .colorname{
+                        line-height: 40px;
+                    color: #666464;
+                    font-size: 14px;
+                    overflow: hidden;
+                    }
+                    .proColor{
+                        .color_code{
+                            height: 60px;
+                                float: left;
+                            position: relative;
+                            width: 60px;
+                            border: 1px solid #b8b7bd;
+                            margin: 0 5px 7px 0;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .color_size{
+                        overflow: hidden;
+                    padding-top: 1px;
+                    p{
+                        line-height: 40px;
+                        color: #666464;
+                        font-size: 14px;
+                        overflow: hidden;
+                    }
+                    .size-list{
+                        
+                          li{
+                              overflow: hidden;
+                                width: 42px;
+                                height: 30px;
+                                line-height: 30px;
+                                border: 1px solid #ddd;
+                                margin-right:4px ;
+                                 float: left;
+                                color: #bbb;
+                                a{
+                                        color: #666464;
+                                   
+                                    height: 30px;
+                                    line-height: 30px;
+                                    text-align: center;
+                                    display: block;
+                                    width: 100%;
+                                    font-size: 14px;
+                                }
+                          }  
+                    }
+                }
+                .sumbox{
+                    margin-top:15px ;
+                    width: 446px;
+                    z-index: -1;
+                    .amount-box{
+                        width: 120px;
+                        border: 1px solid #e5e5e5;
+                        float: left;
+                        position: relative;
+                        a{
+                            display: block;
+                            width: 75px;
+                            padding: 0 19px;
+                            height: 40px;
+                            line-height: 40px;
+                            font-size: 16px;
+                            background: url(../img/dtl-buy.png) no-repeat right -27px;
+                            span{
+                                line-height: 40px;
+                                font-size: 16px;
+                            }
+                            }
+                            ul{
+                                width: 100%;
+                                overflow: hidden;
+                                text-align: center;
+                                position: absolute;
+                                top: 41px;
+                                background-color: #e5e5e5;
+                                display: none;
+                                li{
+                                    line-height: 35px;
+                                    cursor: pointer;
+                                    border-bottom: 1px solid #fff;
+                                    font-size: 14px;
+                                }
+                        }
+                    }
+                    
+                    .buttonbox{
+                        overflow: hidden;
+                        float: left;
+                        width: 320px;
+                        margin-left: 4px;
+                        input{
+                                border: 0;
+                                color: #fff;
+                                float: left;
+                                font-size: 16px;
+                                height: 42px;
+                                line-height: 36px;
+                                margin: 0 4px 0 0;
+                                width: 156px;
+                                cursor: pointer;
+                                border-radius: 2px;
+                                padding: 0;
+                                vertical-align: middle;
+                        }
+                        .dtl-cart{
+                                background-color: #000;
+                                border: 1px solid #000;
+                        }
+                 }
+                 
+                    }
+                 .pro-intro{
+                    
+                     overflow: hidden;
+                    margin-top: 20px;
+                    width: 100%;
+                    h3{
+                        font-size: 14px;
+                        color: #515151;
+                        p{
+                            color: #b1b1b1;
+                            font-size: 14px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            
+        }
+       
+    }
+     
+    }
+    
+}

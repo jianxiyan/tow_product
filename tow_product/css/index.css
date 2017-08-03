@@ -1,4 +1,5 @@
 @charset "UTF-8";
+aside,
 body,
 dd,
 dl,
@@ -57,6 +58,10 @@ a {
   color: #666;
   text-decoration: none; }
 
+body,
+html {
+  height: 100%; }
+
 /*----------banner-----------*/
 #main {
   width: 1920;
@@ -78,8 +83,14 @@ a {
     overflow: hidden; }
     #banner #bannerList li {
       position: absolute;
+      left: 1920px;
       width: 1920px;
-      height: 550px; }
+      height: 550px;
+      width: 1920px;
+      height: 550px;
+      overflow: hidden; }
+      #banner #bannerList li a {
+        position: absolute; }
     #banner #bannerList img {
       width: 1920px;
       height: 550px;
@@ -99,10 +110,12 @@ a {
       border-radius: 0;
       padding: 0 10px;
       line-height: 30px;
-      opacity: .7;
+      opacity: 0.7;
       border-right: 1px #969171 solid;
       margin: 0;
       background: #000; }
+    #banner #bannerNav .nsty {
+      background: #DD0000; }
   #banner #bannerBtns .btn {
     position: absolute;
     height: 42px;
@@ -150,7 +163,18 @@ a {
         background: rgba(0, 0, 0, 0.5); }
         #main-one .w .item .item-shadow a:hover {
           color: #333; }
+        #main-one .w .item .item-shadow .item-shadow-bg {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          height: 40px;
+          background: #fff;
+          width: 0px; }
         #main-one .w .item .item-shadow a {
+          height: 40px;
           color: #fff;
           border: 1px solid #fff;
           background: none;
@@ -170,7 +194,8 @@ a {
           bottom: 0;
           left: 0;
           right: 0;
-          margin: auto; }
+          margin: auto;
+          z-index: 1; }
     #main-one .w .item-1 {
       height: 480px;
       width: 580px;
@@ -188,6 +213,8 @@ a {
         display: block;
         text-align: center;
         margin-top: 10px; }
+        #main-one .w .item-1 span a:hover {
+          color: #DD0000; }
         #main-one .w .item-1 span a {
           font-size: 14px;
           margin: 0 5px;
@@ -195,7 +222,8 @@ a {
 
 /*-----------------main-------------------*/
 #main {
-  background: #fff; }
+  background: #fff;
+  /*-----------------main-tow-----------------------*/ }
   #main #main-tow {
     width: 1190px;
     margin: 0 auto; }
@@ -225,9 +253,13 @@ a {
         #main #main-tow .main-tow-box .main-tow-banner ul {
           width: 580px;
           height: 406px;
-          position: relative; }
+          position: relative;
+          overflow: hidden; }
           #main #main-tow .main-tow-box .main-tow-banner ul li {
             position: absolute; }
+            #main #main-tow .main-tow-box .main-tow-banner ul li img {
+              position: absolute;
+              left: 580px; }
           #main #main-tow .main-tow-box .main-tow-banner ul p {
             position: absolute;
             width: 100%;
@@ -240,8 +272,10 @@ a {
               border: 1px #ccc solid;
               background: #222;
               border-radius: 50%;
-              opacity: .7;
+              opacity: 0.7;
               margin: 0 5px; }
+            #main #main-tow .main-tow-box .main-tow-banner ul p .active {
+              background: #fff; }
         #main #main-tow .main-tow-box .main-tow-banner .main-tow-banner-tit {
           font-weight: 600;
           font-size: 26px;
@@ -269,10 +303,180 @@ a {
             height: 30px;
             line-height: 30px;
             width: 104px;
+            overflow: hidden;
+            font-size: 14px;
+            display: inline-block;
+            font-weight: 700;
+            position: relative; }
+            #main #main-tow .main-tow-box .main-tow-banner .main-tow-banner-p a .main-tow-banner-buy {
+              display: inline-block;
+              color: #000;
+              margin: 0 auto;
+              position: absolute;
+              left: 0;
+              width: 104px;
+              height: 30px; }
+            #main #main-tow .main-tow-box .main-tow-banner .main-tow-banner-p a .main-tow-banner-pbg {
+              display: inline-block;
+              height: 32px;
+              width: 0px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+              background: #000000;
+              transform: skew(45deg); }
+          #main #main-tow .main-tow-box .main-tow-banner .main-tow-banner-p a:hover span {
+            color: #fff; }
+
+/*-----------------main-three-----------------------*/
+#main-production {
+  width: 1190px;
+  height: 3650px;
+  margin: 0 auto; }
+  #main-production ul .production-box:hover {
+    box-shadow: 0px 60px 99px 1px rgba(96, 96, 96, 0.4);
+    -webkit-box-shadow: 0px 60px 99px 1px rgba(96, 96, 96, 0.4);
+    z-index: 100; }
+  #main-production ul .production-box {
+    display: inline-block;
+    height: 350px;
+    width: 289px;
+    position: relative;
+    margin-right: 3px;
+    margin-bottom: 15px; }
+    #main-production ul .production-box .production-box-content {
+      background: #fff;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 288px;
+      border: 2px #fff solid; }
+    #main-production ul .production-box .production-content-img {
+      position: relative;
+      height: 288px;
+      width: 288px;
+      overflow: hidden;
+      display: block;
+      margin-bottom: 7px; }
+      #main-production ul .production-box .production-content-img .img-shadow {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 288px;
+        width: 288px;
+        background: rgba(0, 0, 0, 0.02); }
+    #main-production ul .production-box .production-content-select {
+      background: #fff;
+      height: 0;
+      width: 214px;
+      overflow: hidden;
+      padding: 0 30px 0 41px; }
+      #main-production ul .production-box .production-content-select div {
+        height: 32px;
+        width: 180px;
+        overflow: hidden;
+        margin-left: 0; }
+        #main-production ul .production-box .production-content-select div ul {
+          height: 32px;
+          width: auto;
+          text-align: center; }
+          #main-production ul .production-box .production-content-select div ul .content-select {
+            margin: 0 1px;
+            display: inline-block;
+            height: 32px;
+            width: 32px;
+            line-height: 30px;
+            position: relative; }
+            #main-production ul .production-box .production-content-select div ul .content-select a {
+              height: 30px;
+              width: 30px;
+              overflow: hidden;
+              border: 1px #ddd solid;
+              position: absolute;
+              left: 0; }
+    #main-production ul .production-box .production-content-title {
+      margin-top: 10px;
+      color: #000;
+      display: block;
+      text-align: center;
+      background: #fff;
+      z-index: 101; }
+    #main-production ul .production-box .production-content-pirce {
+      display: block;
+      text-align: center;
+      background: #fff;
+      z-index: 101; }
+      #main-production ul .production-box .production-content-pirce .production-price {
+        color: #666;
+        font-size: 16px; }
+    #main-production ul .production-box .produ-buy {
+      height: 0;
+      width: 285px;
+      overflow: hidden;
+      display: block;
+      text-align: center;
+      background: #fff;
+      z-index: 101;
+      margin-top: 1px; }
+      #main-production ul .production-box .produ-buy .produ-buy-com {
+        background: #fff; }
+        #main-production ul .production-box .produ-buy .produ-buy-com div {
+          display: block;
+          position: relative;
+          margin: 0;
+          padding: 0;
+          z-index: 1; }
+          #main-production ul .production-box .produ-buy .produ-buy-com div .produ-buy-shadow {
+            position: absolute;
+            left: 29%;
+            height: 32px;
+            width: 0px;
+            background: #DD0000; }
+          #main-production ul .production-box .produ-buy .produ-buy-com div a {
+            border: 1px solid #ddd;
+            color: #000;
+            background: none;
+            cursor: pointer;
+            height: 30px;
+            line-height: 30px;
+            width: 120px;
             text-align: center;
             font-size: 14px;
             display: inline-block;
             font-weight: 700;
             position: relative; }
+          #main-production ul .production-box .produ-buy .produ-buy-com div a:hover {
+            color: #fff; }
+
+/*-----------------main-four-----------------------*/
+.more {
+  margin: 90px auto 50px;
+  width: 1190px;
+  height: 66px;
+  position: relative; }
+  .more .more-bj {
+    position: absolute;
+    left: 40%;
+    top: 12px;
+    height: 42px;
+    background: #DD0000;
+    width: 0; }
+  .more .more-btn:hover {
+    color: #fff; }
+  .more .more-btn {
+    color: #e2e2e2;
+    display: inline-block;
+    position: relative;
+    left: 40%;
+    border: 1px solid #dbdbdb;
+    margin: 12px auto;
+    height: 40px;
+    line-height: 40px;
+    width: 300px;
+    text-align: center;
+    font-size: 18px; }
 
 /*# sourceMappingURL=index.css.map */

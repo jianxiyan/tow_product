@@ -1,0 +1,403 @@
+@charset "UTF-8";
+body,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+img,
+legend,
+li,
+menu,
+nav,
+ol,
+p,
+ul {
+  margin: 0;
+  padding: 0; }
+
+fieldset,
+img {
+  border: 0; }
+
+img {
+  display: block; }
+
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal; }
+
+ol,
+ul {
+  list-style: none; }
+
+body {
+  color: #333;
+  padding: 0;
+  font: 12px/20px "SimSun","瀹嬩綋","Arial Narrow",HELVETICA;
+  background: #fff;
+  /* overflow-y:scroll;*/
+  overflow-x: hidden; }
+
+a {
+  color: #666;
+  text-decoration: none; }
+
+/*-----------main1-------------*/
+.main1-wrap {
+  width: 1190px;
+  height: auto;
+  margin: 0 auto; }
+  .main1-wrap .dh-nav {
+    width: 100%;
+    overflow: hidden;
+    height: 23px;
+    margin: 25px 0 15px; }
+    .main1-wrap .dh-nav .nav-list {
+      height: 23px; }
+      .main1-wrap .dh-nav .nav-list .nav-type {
+        display: inline-block;
+        line-height: 21px; }
+        .main1-wrap .dh-nav .nav-list .nav-type a {
+          color: #666; }
+        .main1-wrap .dh-nav .nav-list .nav-type .sty {
+          display: inline-block;
+          margin-left: 3px;
+          width: 15px;
+          height: 15px;
+          vertical-align: middle;
+          background: url(../img/list_select_icon.png) no-repeat;
+          background-position: 0 -104px; }
+  .main1-wrap .selector-box .selector-info {
+    line-height: 35px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-left: 0;
+    border-right: 0;
+    background-color: #f1f1f1; }
+    .main1-wrap .selector-box .selector-info h3 {
+      padding-left: 10px;
+      display: inline-block;
+      float: left; }
+      .main1-wrap .selector-box .selector-info h3 em {
+        font-style: normal;
+        color: #666; }
+    .main1-wrap .selector-box .selector-info span {
+      padding-left: 20px;
+      color: #666; }
+  .main1-wrap .selector-box .selector-line {
+    line-height: 35px;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid #ddd; }
+    .main1-wrap .selector-box .selector-line dt {
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding-left: 10px;
+      width: 60px; }
+    .main1-wrap .selector-box .selector-line .values {
+      padding: 0 140px 0 70px;
+      width: auto;
+      height: 35px; }
+      .main1-wrap .selector-box .selector-line .values ul {
+        width: 100%;
+        height: 100%;
+        overflow: hidden; }
+        .main1-wrap .selector-box .selector-line .values ul li {
+          display: inline-block;
+          float: left;
+          width: 100px;
+          white-space: nowrap;
+          overflow: hidden; }
+          .main1-wrap .selector-box .selector-line .values ul li i {
+            display: none;
+            width: 12px;
+            height: 12px;
+            margin: -2px 5px 0 0;
+            border: 1px solid #ccc;
+            vertical-align: middle;
+            background: url(../img/list_select_icon.png) no-repeat;
+            background-position: 999px 999px; }
+          .main1-wrap .selector-box .selector-line .values ul li .ckd {
+            color: #666;
+            vertical-align: middle;
+            overflow: hidden; }
+      .main1-wrap .selector-box .selector-line .values .sl_btns {
+        text-align: center;
+        margin-bottom: 5px;
+        display: none; }
+        .main1-wrap .selector-box .selector-line .values .sl_btns .ckd2 {
+          background: #fff;
+          color: #ccc;
+          opacity: 0.2;
+          padding: 5px 10px;
+          margin-right: 5px;
+          border-radius: 2px;
+          background-color: #fff;
+          border: 1px solid #ddd; }
+    .main1-wrap .selector-box .selector-line .list-gx {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 130px;
+      text-align: right;
+      float: right; }
+      .main1-wrap .selector-box .selector-line .list-gx .more {
+        color: #666;
+        vertical-align: middle;
+        overflow: hidden;
+        line-height: 35px; }
+        .main1-wrap .selector-box .selector-line .list-gx .more i {
+          margin-left: 5px;
+          border: 1px solid #d5d5d5;
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          vertical-align: middle;
+          background: url(../img/list_select_icon.png) no-repeat;
+          background-position: 3px -136px;
+          transition: all 500ms; }
+        .main1-wrap .selector-box .selector-line .list-gx .more i:hover {
+          border: 1px solid #D71921;
+          background-position: 3px -154px; }
+      .main1-wrap .selector-box .selector-line .list-gx .dx:hover {
+        border: 1px solid #D71921; }
+        .main1-wrap .selector-box .selector-line .list-gx .dx:hover i {
+          background-position: 3px -268px; }
+      .main1-wrap .selector-box .selector-line .list-gx .dx {
+        border: 1px solid #d5d5d5;
+        padding: 3px 5px 3px 0;
+        margin-left: 15px;
+        text-align: right;
+        line-height: 35px; }
+        .main1-wrap .selector-box .selector-line .list-gx .dx i {
+          transition: all 500ms;
+          background-position: 3px -248px;
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          vertical-align: middle;
+          background: url(../img/list_select_icon.png) no-repeat;
+          background-position: 3px -248px; }
+
+/*-----------main2-------------*/
+.main2 {
+  width: 1190px;
+  height: auto;
+  margin: 0 auto; }
+  .main2 .main2-top {
+    margin: 10px 0;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-right: 0;
+    border-left: 0;
+    background-color: #f1f1f1;
+    overflow: hidden; }
+    .main2 .main2-top .top-1 {
+      width: 160px;
+      height: 25px;
+      float: left; }
+      .main2 .main2-top .top-1 a {
+        padding: 3px 8px;
+        float: left;
+        color: #000;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        margin-right: -1px; }
+      .main2 .main2-top .top-1 .asty {
+        color: #fff;
+        background-color: #e4393c;
+        border-color: #e4393c; }
+    .main2 .main2-top .top-2 {
+      float: left;
+      min-width: 257px;
+      padding: 3px 8px;
+      background-color: #fff;
+      border: 1px solid #ccc; }
+      .main2 .main2-top .top-2 a {
+        margin-right: 5px;
+        line-height: 15px;
+        float: left;
+        display: inline-block; }
+        .main2 .main2-top .top-2 a input {
+          vertical-align: middle;
+          margin: -1px 5px 0 0;
+          padding: 0; }
+    .main2 .main2-top .top-3 {
+      width: 180px;
+      margin-left: 20px;
+      float: left;
+      height: 25px; }
+      .main2 .main2-top .top-3 input {
+        padding: 3px;
+        width: 110px;
+        height: 17px;
+        line-height: 17px;
+        color: #999;
+        border: 1px solid #ccc;
+        vertical-align: middle;
+        float: left; }
+      .main2 .main2-top .top-3 a {
+        display: inline-block;
+        height: 14px;
+        line-height: 14px;
+        padding: 4px 13px 5px;
+        margin-left: -1px;
+        border: 1px solid #ccc;
+        border-radius: 0;
+        color: #333;
+        float: left; }
+    .main2 .main2-top .top-4 {
+      width: 146px;
+      float: right; }
+      .main2 .main2-top .top-4 span {
+        line-height: 23px;
+        margin-right: 10px;
+        color: #666;
+        float: left; }
+        .main2 .main2-top .top-4 span b {
+          color: #e4393c; }
+      .main2 .main2-top .top-4 a {
+        display: inline-block;
+        margin-right: -1px;
+        float: left;
+        width: 45px;
+        height: 25px;
+        background: url(../img/list_select_icon.png) no-repeat #fff;
+        border: 1px solid #ddd; }
+      .main2 .main2-top .top-4 .page_n {
+        background-position: center -170px; }
+      .main2 .main2-top .top-4 .page_p {
+        background-position: center -98px; }
+  .main2 .main2-content {
+    margin-top: 10px;
+    overflow: hidden;
+    height: 2291px; }
+    .main2 .main2-content .content {
+      height: 2202px;
+      overflow: hidden; }
+      .main2 .main2-content .content .production-box {
+        width: 234px;
+        height: 345px;
+        position: relative;
+        margin: 10px 0;
+        border: 1px solid #fff;
+        display: inline-block;
+        float: left; }
+        .main2 .main2-content .content .production-box .production-box-content:hover {
+          border: 1px solid #E2E2E2; }
+        .main2 .main2-content .content .production-box .production-box-content {
+          box-sizing: border-box;
+          padding: 7px 7px 10px; }
+          .main2 .main2-content .content .production-box .production-box-content .production-content-img {
+            display: block;
+            margin-bottom: 15px;
+            text-align: center;
+            width: 220px;
+            height: 220px;
+            position: relative; }
+            .main2 .main2-content .content .production-box .production-box-content .production-content-img img {
+              height: 220px;
+              width: 220px; }
+          .main2 .main2-content .content .production-box .production-box-content .production-content-select {
+            overflow: hidden;
+            position: relative;
+            width: 220px; }
+            .main2 .main2-content .content .production-box .production-box-content .production-content-select div {
+              height: 32px; }
+              .main2 .main2-content .content .production-box .production-box-content .production-content-select div ul .content-select {
+                width: 28px;
+                height: 28px;
+                border: 1px solid #ddd;
+                display: inline-block;
+                float: left;
+                padding: 1px;
+                margin: 0 4px 0 0; }
+                .main2 .main2-content .content .production-box .production-box-content .production-content-select div ul .content-select img {
+                  height: 28px;
+                  width: 28px; }
+      .main2 .main2-content .content .production-content-pirce {
+        display: block;
+        position: relative;
+        margin: 10px 0;
+        width: 100%;
+        height: 22px;
+        line-height: 22px;
+        overflow: hidden;
+        color: #e4393c; }
+        .main2 .main2-content .content .production-content-pirce .production-price {
+          font-size: 20px;
+          font-weight: 400; }
+      .main2 .main2-content .content .production-content-title {
+        line-height: 18px;
+        width: 215px;
+        color: #666;
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis; }
+        .main2 .main2-content .content .production-content-title a {
+          color: #333; }
+    .main2 .main2-content a {
+      text-decoration: none; }
+    .main2 .main2-content a:hover {
+      text-decoration: none; }
+    .main2 .main2-content .tcdPageCode {
+      padding: 15px 20px;
+      text-align: left;
+      color: #ccc;
+      text-align: center; }
+      .main2 .main2-content .tcdPageCode a {
+        display: inline-block;
+        color: #428bca;
+        display: inline-block;
+        height: 25px;
+        line-height: 25px;
+        padding: 0 10px;
+        border: 1px solid #ddd;
+        margin: 0 2px;
+        border-radius: 4px;
+        vertical-align: middle; }
+      .main2 .main2-content .tcdPageCode a:hover {
+        text-decoration: none;
+        border: 1px solid #428bca; }
+      .main2 .main2-content .tcdPageCode span.current {
+        display: inline-block;
+        height: 25px;
+        line-height: 25px;
+        padding: 0 10px;
+        margin: 0 2px;
+        color: #fff;
+        background-color: #428bca;
+        border: 1px solid #428bca;
+        border-radius: 4px;
+        vertical-align: middle; }
+      .main2 .main2-content .tcdPageCode span.disabled {
+        display: inline-block;
+        height: 25px;
+        line-height: 25px;
+        padding: 0 10px;
+        margin: 0 2px;
+        color: #bfbfbf;
+        background: #f2f2f2;
+        border: 1px solid #bfbfbf;
+        border-radius: 4px;
+        vertical-align: middle; }
+
+/*# sourceMappingURL=splb.css.map */
